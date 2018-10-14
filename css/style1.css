@@ -1,0 +1,42 @@
+.flex-box-conteiner{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-top: 20px;
+}
+
+.flex-box-element{
+	box-sizing: border-box;
+	background: #1a1a1a;
+	border: 1px solid grey;
+	margin: 25px 8px;
+	padding: 5px 10px 20px 7px;
+	color: white;
+}
+
+.flex-box-element #podr{
+	background: blue;
+	color: white;
+	margin: 5px;
+	padding: 5px 8px;
+	border: 1px solid blue;
+	text-decoration: none;
+	width: 100%;
+}
+
+
+.flex-box-conteiner .header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.face{
+	width: 50px;
+}
+
+h1{
+	color: black;
+}

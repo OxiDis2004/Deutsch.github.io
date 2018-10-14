@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User page</title>
+    <link href="images/6-8.png" rel="shortcut icon" type="img/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <div class="flex-box-conteiner">
+        <div class="header">
+            <div id="logo">
+                <a href="index.html" title="Перейти на главную">
+                <img src="images/0.png">
+                </a>
+            </div>
+            <nav>
+                <div id="dws-menu">
+                    <ul>
+                        <li><a href="#">Падежы</a>
+                            <ul>
+                                <li class="f1"><a href="Akkusativ.html">Akkusativ</a></li>
+                                <li class="f2"><a href="Dativ.html">Dativ</a></li>
+                                <li class="f3"><a href="Genitiv.html">Genitiv</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Временна</a>
+                            <ul>
+                                <li class="f1"><a href="Prasens.html">Präsens</a></li>
+                                <li class="f2"><a href="Perfekt.html">Perfekt</a></li>
+                                <li class="f3"><a href="Futur.html">Futur</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Glagolu.html">Неправелные глаголы</a></li>         
+                        <li><a href="Comments.html">Отзывы</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="login">
+                <a href="login.html" title="Вход">Вход</a>|<a href="login.html" title="Вхід">Вхід</a>
+            </div>
+        </div>
+        </div>
+    <div class="content">
+        <div id="userPanel" class="well userPanel">
+            <p>Вітаємо, <span id="userName"></span></p>
+            <button class="button danger" onclick="logout()">Вийти з системи</button>
+        </div>
+    </div>
+
+    <script src="js/check-login.js" type="text/javascript"></script>
+</body>
+</html>

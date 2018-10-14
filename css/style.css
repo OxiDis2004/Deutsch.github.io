@@ -1,0 +1,190 @@
+body{
+	background: white;
+	color: black;
+	font-family: Cuprum, Arial, Helvetical, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a img{
+	width: 300px;
+	margin-top: 30px;
+}
+
+.img{
+	margin-left: 40px;
+	margin-top: 10px;
+	width: 500px;
+}
+
+.li > ul li{
+	list-style-type: none;
+}
+
+.li_li{
+	background: #fafafa;
+	color: black;
+	line-height: 26px;
+	text-shadow: 1px 1px 1px #ffffff;
+	border-width: 1px 1px 1px 8px;
+	border-style: solid;
+	border-color: #DDDDDD #DDDDDD #DDDDDD #3E6A86;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+	margin: 10px 15px 20px;
+	padding: 8px 8px 8px 20px;
+	width: 500px;
+}
+
+h3{
+	margin-left: 15px;
+	margin-top: 10px;  
+}
+
+.li2{
+	border-left: 3px solid green;
+	padding-left: 10px; 
+	margin-left: 30px; 
+}
+
+/*Login*/
+
+form{
+	margin: 10px 5px 10px 30px;
+}
+
+.form-group, .checkbox{
+	margin-bottom: 5px;
+}
+
+/*header & footer*/
+
+.f1{
+	background: #000000;
+	color: white;
+}
+
+.f2{
+	background: #ff0000;
+	color: white;
+}
+
+.f3{
+	background: #ebc600;
+	color: white;
+}
+
+#logo{
+	margin: 10px -70px 10px 50px;
+}
+
+.header{
+	background: #000;
+	color: white;
+	margin-top: -30px;
+	border-bottom: 2px solid silver;
+	width: 100%;
+	padding: -1%;
+}
+
+.header #login{
+	margin: 50px;
+}
+
+.footer{
+	background-color: black;
+    color: white;
+   	padding: 10px;
+}
+
+#dws-menu{
+	background: black;
+	margin: 30px 50px 20px 10px;
+}
+
+#dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+
+#dws-menu ul,
+#dws-menu ol{
+	list-style: none;
+}
+
+#dws-menu ul{
+	display: flex;
+	justify-content: center;
+}
+
+#dws-menu > ul li a {
+	display: block;
+	padding: 15px 30px 15px 55px;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.6s ease;
+}
+
+
+#dws-menu > ul li{
+	position: relative;
+}
+
+
+#dws-menu > ul li > a i.fa{
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	font-size: 18px;
+}
+
+
+#dws-menu li a:hover{
+	box-shadow: 1px 2px 10px -5px;
+	transition: all 0.6s ease;
+	background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1d1d1+0,ffffff+35,fefefe+70,d1d1d1+100 */
+	background: rgb(209,209,209); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 35%, rgba(254,254,254,1) 70%, rgba(209,209,209,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(209,209,209,1) 0%,rgba(255,255,255,1) 35%,rgba(254,254,254,1) 70%,rgba(209,209,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(209,209,209,1) 0%,rgba(255,255,255,1) 35%,rgba(254,254,254,1) 70%,rgba(209,209,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
+	color: black;
+}
+
+/*Sub menu*/
+
+#dws-menu li ul{
+	position: absolute;
+	min-width: 150px;
+	display: none;
+}
+
+
+#dws-menu li > ul li a{ 
+	padding: 10px 25px 10px 10px;
+	text-transform: none;
+}
+
+
+#dws-menu li > ul li ul{
+	position: absolute;
+	right: -150px;
+	top: 0;
+}
+
+
+#dws-menu li:hover > ul{
+	display: block;
+}

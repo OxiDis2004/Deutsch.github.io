@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+<head>
+    <meta charset="UTF-8">
+    <title>User page</title>
+    <link href="images/6-8.png" rel="shortcut icon" type="img/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--     <link rel="stylesheet" href="css/style2.css"> -->
+    <script>
+        function valid (form){
+            var fail = false;
+            var name = Form.name.value;
+            var email = Form.email.value;
+            var password = Form.password.value;
+            var RePassword = Form.RePassword.value;
+            var state = Form.state.value;
+
+            var adr_pattern = /[0-9a-z_-.]+@[0-9a-z_-.]+\.[a-z]{2,5}/i;
+
+            if (name == "" || name == " ")
+                fail == "Вы не ввели свое имя";
+            
+            else if (adr_pattern.test(email) == false)
+                fail = "Вы ввели email неправильно";
+            
+            else if (password == "")
+                fail = "Вы не ввели пароль";
+            
+            else if (password != RePassword)
+                fail = "Пароли не совпадают";
+            
+            else if (state == "")
+                fail = "Укажите пол";
+            
+            if(fail)
+                alert(fail);
+            
+    
+        }
+    </script>
+</head>
+<body>
+        <!-- <h2>Реестрация</h2> -->
+        <form action="" method="post" name="test" id="form">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" placeholder="Имя" id="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email" id="email"><br><br>
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" placeholder="Пароль" id="password"><br><br>
+            <label for="RePassword">Проверка пароля:</label>
+            <input type="password" name="RePassword" placeholder="Проверка пароля" id="RePassword"><br><br>
+            <span>Пол:</span>
+            <input type="radio" name="state" id="male" value="Мужской"><label for="male">Мужской</label>
+            <input type="radio" name="state" id="female" value="Женский"><label for="female">Женский</label><br><br>
+            <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Регистрация">
+        </form>
+    <script type="text/javascript" defer="js/main.js"></script>
+</body>
+</html>
